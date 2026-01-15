@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: nur-lib
+
+  datasource:
+    username: ${POSTGRES_USER:postgres}
+    password: ${POSTGRES_PASSWORD:password}
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:${POSTGRES_PORT:5432}/${POSTGRES_DB:nur_lib}
+
+  jpa:
+    hibernate:
+      ddl-auto: update
